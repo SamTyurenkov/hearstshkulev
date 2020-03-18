@@ -72,8 +72,9 @@ $string .= $seconds . ' секунд';
 $string .= 'только что';	
 }
 
-//replace last comma with regex
+//replace last comma with regex and remove it if its the end of the string
 $string = preg_replace('/,(?!.*,)/', ' и ', $string);
+$string = preg_replace('/ и $/', '', $string);
 
 return $string;
 }
