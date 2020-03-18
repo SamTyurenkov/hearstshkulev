@@ -76,7 +76,7 @@ $array[] = 'только что';
 $count = count($array);
 
 switch ($count) {
-	case 1: $string = implode ('', $array); break;
+	case 1: $string = $array[0]; break;
 	case 2: $string = implode (' и ', $array); break;
 	default: $string = implode (', ', $array); $string = preg_replace('/,(?!.*,)/', ' и ', $string); break;
 }
