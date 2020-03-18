@@ -68,7 +68,7 @@ $string .= $seconds . ' секунда';
 $string .= $seconds . ' секунды';	
 } elseif ($seconds != 0) {
 $string .= $seconds . ' секунд';		
-} else {
+} elseif ($string == '') {
 $string .= 'только что';	
 }
 
