@@ -7,7 +7,7 @@ $array = array();
 
 $mint = 2147483647; //max integer value on 32bit php ~~~68 years;
 $year = 31536000;   //seconds in year with 365 days
-$month = 31536000;  //seconds in average month
+$month = 2628288;  //seconds in average month
 $day = 86400; 		//seconds in day
 $hour = 3600; 		// seconds in hour
 $minute = 60; 		//secounds in minute
